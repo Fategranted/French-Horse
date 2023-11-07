@@ -1,10 +1,13 @@
 # French-Horse
 Group Project for CANSSI Competition
 
-We are using a neural network to predict the probability. Our model is in the google colab.
+The goal of this is to develop a model that can be used to predict the probability of a horse winning in a race. We will be using a neural network to make the prediction. We have developed our model in Google colab. 
+
+The main idea of the model is to develop several layers each using linear regression and then using them to develop a prediction for the data. We then compute for the probability of each individual horse winning the race based on the finish position of each horse. 
 
 If you want to train the model from start, you could use this colab:
 https://colab.research.google.com/drive/1MlxxjwTKnLSINT7mIBwXjZvbDdyHkl37?usp=sharing \
+
 Instruction for this colab: 
 1. Upload your csv training data to the colab and rename it to "training_data.csv". 
 2. Upload the csv data you want to predict and rename it to "custom_data.csv". 
@@ -13,7 +16,8 @@ Instruction for this colab:
 Notes and warnings: 
  - You can change the number of epochs in the training process, but it may take very long time to train when your training data is big. 
  - The column names may vary if you upload csv files in the different format from we originally did. This may cause errors when processing the data. \
-   The things we do in processing the data is drop all the non-numeric columns, drop all rows have nans, and convert all numeric values to type float.
+ - We also converted some non-numeric columns into numeric columns through defining each entry with a specific value. 
+- When processing the data, we decided to drop all the non-numeric columns, drop all rows have nans, and convert all numeric values to type float.
    
 Predicted Results:
  - The last dataframe named "predicted_result" contains the horse_id, race_id, and the predicted win_probability. 
