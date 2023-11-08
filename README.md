@@ -23,3 +23,16 @@ Notes and warnings:
 Predicted Results:
 - The last dataframe named "predicted_result" contains the horse_id, race_id, and the predicted win_probability. 
 - We also export the predicted result in a csv file named "predicted_result.csv".
+
+
+You can also try our trained model here:\
+https://colab.research.google.com/drive/18tOyBDOzCOv-jWISi67R3mQxrZjJM2SH?usp=sharing
+
+Instruction for this colab: 
+1. Upload the trained model, "trot_model_state_dict.pth", that we provide in the github repo.
+2. Upload the csv data you want to predict and rename it to "custom_data.csv". 
+3. Run the code from the start.
+
+Predicted Results:
+- The last dataframe named "predicted_result" contains the horse_id, race_id, and the predicted win_probability. 
+- We also export the predicted result in a csv file named "predicted_result.csv".
